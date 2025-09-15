@@ -1,10 +1,22 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+
+import { Lexend } from "next/font/google";
+
 import type { ReactNode } from 'react';
 import './globals.css';
 
 const geistSans = Geist({ subsets: ["latin"], variable: "--font-geist-sans" });
 const geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-geist-mono" });
+
+// app/layout.tsx
+
+const lexend = Lexend({
+  subsets: ["latin"],
+  weight: ["400", "700"],      // pick the weights you need
+  variable: "--font-lexend",
+});
+
 
 export const metadata: Metadata = {
   title: "CS Blurter",
@@ -13,7 +25,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html lang="en" className={`${lexend.variable} ${lexend.variable}`}>
       <body>{children}</body>
     </html>
   );

@@ -9,17 +9,18 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "@chakra-ui/react": "^3.26.0",
+    "@chakra-ui/react": "^3.27.0",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "framer-motion": "^12.23.12",
     "next": "15.5.3",
+    "openai": "^5.20.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
-    "@types/node": "^20",
+    "@types/node": "^20.19.14",
     "@types/react": "^18.3.24",
     "@types/react-dom": "^18.3.7",
     "eslint": "^9",
