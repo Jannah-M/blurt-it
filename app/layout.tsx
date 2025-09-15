@@ -6,14 +6,12 @@ import { Lexend } from "next/font/google";
 import type { ReactNode } from 'react';
 import './globals.css';
 
-const geistSans = Geist({ subsets: ["latin"], variable: "--font-geist-sans" });
-const geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-geist-mono" });
 
 // app/layout.tsx
 
 const lexend = Lexend({
   subsets: ["latin"],
-  weight: ["400", "700"],      // pick the weights you need
+  weight: ["400", "700"],
   variable: "--font-lexend",
 });
 
